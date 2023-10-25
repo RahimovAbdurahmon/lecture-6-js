@@ -1,1 +1,1 @@
-"# lecture-6-js" 
+# Lecture 6
