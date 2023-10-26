@@ -101,7 +101,8 @@ console.log(obj2);
 output : 
 { name: 'Bilol', surName: 'Rahimov', age: 12 }
 ```
-# _What is this in js object : - this in fakat dar object kor mekunad dar  holalte ki mo dar iagon valuei properiti function menavisem this in dar returni function kor mekunad va obji blobalro mekobad_
+># _What is this in js object_ 
+## _this in fakat dar object kor mekunad dar  holalte ki mo dar iagon valuei properiti function menavisem this in dar returni function kor mekunad va obji blobalro mekobad_
 ```
 let obj = {
     name : "Bilol",
@@ -115,3 +116,132 @@ console.log(obj.fullName());
 output : 
 Rahimov Bilol
 ```   
+># _What is new Date() in js;_
+![](./images%20(1).jpg)
+## _new Date () in Data vremia meboshad ki mo metavone ba vositai methidho funksiaho dta vremia sozem_
+>## _How to creat a new date_
+## _new Date () : - Datai aini zamonro nishon medihad_ 
+```
+let date = new Date()
+console.log(date);
+output : 
+2023-10-26T19:35:30.452Z
+``` 
+## _new Date (millisecon) mo milliseundro dobavit mekunem on az soli 1970 injonib sar kar karda millisecundhoi mori dar boli onho meguzorad_
+```
+let date = new Date(10000000)
+console.log(date);
+output : 
+1970-01-01T02:46:40.000Z
+```
+## _new Date (sting) : in namudui date baroi sokhtani date bo string_
+```
+let date = new Date("2023-05-20")
+console.log(date);
+output :
+2023-05-20T00:00:00.000Z
+```
+## _new Date(year,month,day,hour,minuts,secons,milliseconds) : hama namud to millisecundro bashumo nishon medihad_
+```
+let date = new Date(2023,04,20,16,29,1000)
+console.log(date);
+output : 
+2023-05-20T13:45:40.000Z
+```
+># _Data and Time_
+## _1.now() : Millisecundhoro az soli 1970 injonib sar karda nishon medihad_
+```
+let date = Date.now()
+console.log(date);
+output : 
+1698349663995
+```
+## _getFillYear () : solro prra ba mo nishon medihad_
+```
+let date = new Date()
+console.log(date.getFullYear());
+output : returns the full Of Year with 4 digits
+2023 
+```
+## _getMonth () : mohro nishon medihad bo raqam agar khohem ki on nomi mohro nish on dihem dar iak vriable array karda bakhshem_ 
+```
+// let month = ["January","Fabruaru","March","April","May","June","July","August","Seprtember","October","November","December"]
+// let date = new Date()
+// console.log(month[date.getMonth()]);
+output : 
+Otober
+```
+## _getDate() : baroi nishon dodani ruz_ 
+```
+let date = new Date()
+console.log(date.getDate());
+output : 
+the day wich you are ///26 this is today
+```
+## _getDay() : baroi nishon dodani ruzhoi hafta_ 
+```
+// let day = ["Sun","Mon","Tuez","wed","thurth","friday","satur"]
+// let date = new Date()
+// console.log(day[date.getDay()]);
+output : 
+the day of week wich you are ///friday this is today
+```
+## _getHours() : baroi nishon dodani soati hamon lahza_ 
+```
+let date = new Date()
+console.log(date.getHours());
+output : 
+the time wich you are ///23 this is now
+```
+## _getMinutes() : baroi nishon dodani soati hamon lahza daqiqa_ 
+```
+let date = new Date()
+console.log(date.getMinures());
+output : 
+the time of minute wich you are ///20 this is now minute
+```
+>## _Also it has a second and millisecond_
+## _setDate() : set the date of the day_
+```
+let date = new Date()
+console.log(date.setDate(15));
+output : show millisecond : 1697402696155
+--------------------------------------------
+let date = new Date()
+date.setDate(15)
+console.log(data);
+output : 2023-10-15T20:46:08.843Z
+--------------------------------------------
+let date = new Date()
+console.log(date.toString());
+output : Mon Oct 16 2023 23:44:08 GMT+0300 (Москва, стандартное время)
+--------------------------------------------
+``` 
+## _setMonth() : set the month of the date_
+```
+let date = new Date()
+console.log(date.setMonth(15));
+output : show millisecond : 1697402696155
+--------------------------------------------
+let date = new Date()
+date.setMonth(0)
+console.log(date);
+output : 2023-01-26T20:48:24.091Z
+--------------------------------------------
+let date = new Date()
+console.log(date.toString());
+output : Mon Oct 16 2023 23:44:08 GMT+0300 (Москва, стандартное время)
+--------------------------------------------
+``` 
+## _setFullYear() : set the year of the date_
+```
+let date = new Date()
+date.setFullYear(0)
+console.log(date);
+output : 2191-08-26T21:16:05.954Z
+--------------------------------------------
+let date = new Date()
+console.log(date.toString());
+output : Fri Oct 27 2023 00:16:45 GMT+0300 (Москва, стандартное время)
+--------------------------------------------
+``` 
